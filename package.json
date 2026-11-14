@@ -1,0 +1,16 @@
+{
+  "name": "solana-xmss-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b packages/xmss",
+    "test": "bun run build && tsc -p tsconfig.test.json && bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,8 @@
+/target
+node_modules
+dist
+
+# Key files hold secrets and the spent-leaf record.
+*.key
+*.key.lock
+*.key.tmp
